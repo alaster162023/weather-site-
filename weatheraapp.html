@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="weather">HOME</a>
+        <a href="globe.html">GLOBE</a>
+        <a href="news.html">NEWS</a>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <h1>Saskatoon</h1>
+            <div class="current-weather">
+                <div class="weather-icon">☁️</div>
+                <div>
+                    <div class="temperature">15°C</div>
+                    <div class="description">Partly cloudy</div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Feels Like</div>
+                    <div class="detail-value">13°C</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Wind Speed</div>
+                    <div class="detail-value">4.5 m/s</div>
+                </div>
+            </div>
+            <h2>Hourly Forecast</h2>
+            <div class="hourly-forecast">
+                <div class="hourly-item">
+                    <div>Now</div>
+                    <div>☁️</div>
+                    <div>15°C</div>
+                </div>
+                <div class="hourly-item">
+                    <div>1 PM</div>
+                    <div>🌤️</div>
+                    <div>16°C</div>
+                </div>
+                <div class="hourly-item">
+                    <div>2 PM</div>
+                    <div>☀️</div>
+                    <div>18°C</div>
+                </div>
+                <div class="hourly-item">
+                    <div>3 PM</div>
+                    <div>☀️</div>
+                    <div>19°C</div>
+                </div>
+                <div class="hourly-item">
+                    <div>4 PM</div>
+                    <div>🌤️</div>
+                    <div>18°C</div>
+                </div>
+                <div class="hourly-item">
+                    <div>5 PM</div>
+                    <div>☁️</div>
+                    <div>17°C</div>
+                </div>
+            </div>
+            <h2>7-Day Forecast</h2>
+            <div class="daily-forecast">
+                <div class="daily-item">
+                    <div>Today</div>
+                    <div>☁️</div>
+                    <div class="daily-temp">20° <span>/ 10°</span></div>
+                </div>
+                <div class="daily-item">
+                    <div>Wed</div>
+                    <div>🌧️</div>
+                    <div class="daily-temp">18° <span>/ 9°</span></div>
+                </div>
+                <div class="daily-item">
+                    <div>Thu</div>
+                    <div>🌤️</div>
+                    <div class="daily-temp">22° <span>/ 11°</span></div>
+                </div>
+                <div class="daily-item">
+                    <div>Fri</div>
+                    <div>☀️</div>
+                    <div class="daily-temp">25° <span>/ 13°</span></div>
+                </div>
+                <div class="daily-item">
+                    <div>Sat</div>
+                    <div>☁️</div>
+                    <div class="daily-temp">21° <span>/ 12°</span></div>
+                </div>
+                <div class="daily-item">
+                    <div>Sun</div>
+                    <div>🌧️</div>
+                    <div class="daily-temp">19° <span>/ 10°</span></div>
+                </div>
+                <div class="daily-item">
+                    <div>Mon</div>
+                    <div>🌤️</div>
+                    <div class="daily-temp">23° <span>/ 12°</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="suggestions-section">
+            <h2>Activity Suggestions</h2>
+            <ul class="suggestion-list">
+                <li>Visit the Meewasin Valley Trail for a pleasant walk</li>
+                <li>Explore the Western Development Museum</li>
+                <li>Enjoy a picnic at Kiwanis Memorial Park</li>
+                <li>Check out the local shops in Broadway District</li>
+            </ul>
+            <h3>Ask AI for More Ideas</h3>
+            <div class="chat-interface">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message">Hello! I can suggest activities based on the current weather in Saskatoon. What would you like to do today?</div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chatInput" placeholder="Ask about activities...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
